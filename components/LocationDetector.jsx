@@ -6,6 +6,7 @@ import Image from 'next/image';
 
 const LocationDetector = () => {
     const [loading, setLoading] = useState(false);
+    const [params, setParams] = useState(new URLSearchParams());
 
     const searchParams = useSearchParams();
     const pathName = usePathname();
