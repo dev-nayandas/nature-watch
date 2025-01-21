@@ -4,7 +4,7 @@ import { Suspense } from "react";
 
 export default function Home() {
   return (
-    <Suspense>
+    <Suspense fallback={<p>Loading...</p>}>
       <LocationDetector />
     </Suspense>
   );
